@@ -10,7 +10,16 @@ import {
   KotlinIcon,
   GitIcon,
 } from "../components/skill-icons";
-import { SysmonVisual, TaskbruteVisual } from "../components/project-visuals";
+
+export const githubUsername = "na-x-ril";
+
+export const excludeRepos = [
+  "customCSS",
+  "roblox-menu-script",
+  "web-api-1",
+  "whatsapp-ext",
+  "youtube-injected",
+];
 
 export const headerLinks = [
   { href: "#about", label: "ABOUT", short: "ABOUT" },
@@ -104,49 +113,6 @@ export const skills: Skill[] = [
 ];
 
 export const skillsTicker = skills.map((s) => s.name);
-
-export type ProjectLink = {
-  label: string;
-  href: string;
-  cls: string;
-};
-
-export type Project = {
-  title: string;
-  subtitle: string;
-  desc: string;
-  tags: string[];
-  visual: ComponentType;
-  cardClass: string;
-  chipClass: string;
-  links: ProjectLink[];
-};
-
-export const projects: Project[] = [
-  {
-    title: "SYSMON CORE",
-    subtitle: "LINUX MONITORING DAEMON",
-    desc: "A lightweight Linux system monitor that watches CPU, memory, disk, and service health — then fires webhooks the moment something goes sideways. Built to sip resources, not hog them.",
-    tags: ["LINUX", "BASH", "SYSTEMD", "WEBHOOKS"],
-    visual: SysmonVisual,
-    cardClass: "nb-card-lime",
-    chipClass: "bg-blue",
-    links: [{ label: "SOURCE CODE", href: "#", cls: "nb-btn nb-btn-paper nb-btn-active" }],
-  },
-  {
-    title: "TASKBRUTE",
-    subtitle: "ANDROID TASK MANAGER",
-    desc: "A brutalist Android task manager that puts every task in its place. Priority-first lists, swipe-to-kill, and a UI that gets out of your way. Kotlin under the hood, zero fluff on screen.",
-    tags: ["KOTLIN", "JETPACK COMPOSE", "ROOM", "COROUTINES"],
-    visual: TaskbruteVisual,
-    cardClass: "nb-card-paper",
-    chipClass: "bg-lime",
-    links: [
-      { label: "SOURCE CODE", href: "#", cls: "nb-btn nb-btn-blue nb-btn-active" },
-      { label: "PLAY STORE", href: "#", cls: "nb-btn nb-btn-active" },
-    ],
-  },
-];
 
 export const socials = [
   { label: "GITHUB", href: "https://github.com/" },
