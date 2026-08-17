@@ -18,7 +18,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="flex min-h-[calc(80svh+var(--header-h))] flex-col justify-center border-b-3 border-ink">
-      <div className="mx-auto grid w-full max-w-6xl gap-12 px-5 py-20 md:grid-cols-2 md:py-28">
+      <div className="mx-auto grid w-full max-w-6xl gap-12 max-sm:gap-8 px-5 py-20 md:grid-cols-2 md:py-28 max-sm:py-10 max-sm:pb-28">
         <div>
           <Reveal>
             <div className="mb-4 inline-flex items-center gap-3 border-3 border-ink bg-surface px-3 py-1.5 shadow-nb">
@@ -34,7 +34,7 @@ export default function Contact() {
               Got a project, a wild idea, or a stack worth debating? Drop a
               transmission. I reply fast — usually within a day.
             </p>
-            <div className="mt-8 space-y-3">
+            <div className="mt-6 space-y-3">
               {contactFacts.map(([k, v]) => (
                 <div key={k} className="flex items-center gap-3 border-2 border-ink bg-surface px-4 py-3 shadow-[3px_3px_0_0_#0a0a0a]">
                   <span className="w-24 text-xs font-bold tracking-widest text-lime-text">

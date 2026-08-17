@@ -13,7 +13,7 @@ export default function ThemeToggle() {
           localStorage.setItem("theme", next);
         } catch {}
       }}
-      className="grid h-8 w-8 ml-2 shrink-0 place-items-center border-3 border-ink bg-surface text-paper shadow-[3px_3px_0_0_#0a0a0a] transition-[translate,box-shadow] duration-120 -translate-x-0.75 -translate-y-0.75 hover:translate-x-0 hover:translate-y-0 hover:shadow-none active:translate-x-0 active:translate-y-0 active:shadow-none max-sm:h-7 max-sm:w-7"
+      className="grid h-8.5 w-8.5 ml-2 shrink-0 place-items-center border-3 border-ink bg-surface text-paper shadow-[3px_3px_0_0_#0a0a0a] transition-[translate,box-shadow] duration-120 -translate-x-0.75 -translate-y-0.75 hover:translate-x-0 hover:translate-y-0 hover:shadow-none active:translate-x-0 active:translate-y-0 active:shadow-none max-sm:h-9 max-sm:w-9"
     >
       <svg
         className="theme-toggle-sun h-4 w-4 max-sm:h-3.5 max-sm:w-3.5"

@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden border-b-3 border-ink">
       <motion.div
-        className="relative mx-auto flex min-h-[calc(100svh-60px)] max-w-6xl flex-col justify-center px-5 py-16"
+        className="relative mx-auto flex min-h-[calc(100svh-60px)] max-w-6xl flex-col justify-center px-5 py-16 -translate-y-6"
         variants={container}
         initial="hidden"
         animate="show"

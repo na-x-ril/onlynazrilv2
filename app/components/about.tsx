@@ -5,7 +5,7 @@ import { aboutStats } from "../lib/data";
 export default function About() {
   return (
     <section id="about" className="flex min-h-[calc(80svh+var(--header-h))] flex-col justify-center border-b-3 border-ink">
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-5 py-20 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:py-28">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-5 py-20 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:py-28 max-sm:py-10 max-sm:pb-28">
         <Reveal className="relative order-2 md:order-1">
           <div className="relative inline-block -rotate-3">
             <div className="border-3 border-ink bg-surface p-4 shadow-nb-lg">

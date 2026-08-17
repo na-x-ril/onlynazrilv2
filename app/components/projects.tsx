@@ -14,7 +14,7 @@ export default async function Projects() {
 
   return (
     <section id="projects" className="flex min-h-[calc(80svh+var(--header-h))] flex-col justify-center border-b-3 border-ink bg-surface/40">
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-28 max-sm:py-10 max-sm:pb-28">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between mb-8">
           <Reveal>
             <div className="mb-4 inline-flex items-center gap-3 border-3 border-ink bg-surface px-3 py-1.5 shadow-nb">

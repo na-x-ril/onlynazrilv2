@@ -57,7 +57,7 @@ export default function ProjectGrid({ repos }: { repos: GitHubRepo[] }) {
         ))}
       </div>
 
-      <div className="mt-4 grid gap-10 lg:grid-cols-2">
+      <div className="mt-4 grid gap-6 lg:grid-cols-2">
         {sorted.map((repo, i) => (
           <article
             key={repo.name}

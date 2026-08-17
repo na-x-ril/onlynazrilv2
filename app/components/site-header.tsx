@@ -8,7 +8,7 @@ function Logo() {
   return (
     <svg
       viewBox="15 16 34 34"
-      className="h-6 w-6 max-sm:h-5 max-sm:w-5"
+      className="h-6 w-6 max-sm:h-7 max-sm:w-7"
       aria-hidden="true"
     >
       <path
@@ -57,9 +57,9 @@ export default function SiteHeader() {
 
   return (
     <header ref={headerRef} className="sticky top-0 z-50 border-b-3 border-ink bg-bg/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 max-sm:gap-2 max-sm:px-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 max-sm:gap-2 max-sm:px-4 max-sm:py-4">
         <a href="#top" className="group flex items-center gap-2">
-          <span className="grid h-8 w-8 place-items-center border-3 border-ink bg-lime shadow-[3px_3px_0_0_#0a0a0a] transition-transform duration-150 group-hover:-translate-y-0.5 max-sm:h-7 max-sm:w-7">
+          <span className="grid h-8 w-8 place-items-center border-3 border-ink bg-lime shadow-[3px_3px_0_0_#0a0a0a] transition-transform duration-150 group-hover:-translate-y-0.5 max-sm:h-9 max-sm:w-9">
             <Logo />
           </span>
           <span className="hidden text-sm font-bold tracking-tight text-paper sm:block">
@@ -73,7 +73,7 @@ export default function SiteHeader() {
               key={link.href}
               href={link.href}
               aria-current={active === link.href ? "true" : undefined}
-              className={`border-2 px-2 py-1.25 text-xs font-bold tracking-wider transition-colors sm:px-3 sm:text-sm max-sm:px-1 max-sm:text-[11px] max-sm:tracking-normal ${
+              className={`border-2 px-2 py-1.25 text-xs font-bold tracking-wider transition-colors sm:px-3 sm:text-sm max-sm:px-1.5 max-sm:py-2 max-sm:text-xs max-sm:tracking-normal ${
                 active === link.href
                   ? "border-ink bg-lime text-ink"
                   : "border-transparent text-paper/80 hover:border-ink hover:bg-lime hover:text-ink"

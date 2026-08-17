@@ -5,7 +5,7 @@ import { skills, skillsTicker } from "../lib/data";
 export default function Skills() {
   return (
     <section id="skills" className="flex min-h-[calc(80svh+var(--header-h))] flex-col justify-center overflow-hidden border-b-3 border-ink">
-      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-28">
+      <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-28 max-sm:py-10 max-sm:pb-28">
         <Reveal>
           <div className="mb-4 inline-flex items-center gap-3 border-3 border-ink bg-surface px-3 py-1.5 shadow-nb">
             <span className="h-3 w-3 bg-lime-deep" />
@@ -22,7 +22,7 @@ export default function Skills() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill, i) => (
             <Reveal key={skill.name} delay={(i % 3) * 0.08}>
               <div className="group flex h-full flex-col border-3 border-ink bg-surface p-5 shadow-nb transition-transform duration-150 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-nb-lg">

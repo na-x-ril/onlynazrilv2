@@ -115,7 +115,7 @@ export const skills: Skill[] = [
 export const skillsTicker = skills.map((s) => s.name);
 
 export const socials = [
-  { label: "GITHUB", href: "https://github.com/" },
+  { label: "GITHUB", href: "https://github.com/na-x-ril" },
   { label: "INSTAGRAM", href: "https://www.instagram.com/mnazril_7673" },
   // { label: "TWITTER", href: "#" },
 ];
