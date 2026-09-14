@@ -4,7 +4,10 @@ import { skills, skillsTicker } from "../lib/data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="flex min-h-[calc(80svh+var(--header-h))] flex-col justify-center overflow-hidden border-b-3 border-ink">
+    <section
+      id="skills"
+      className="flex min-h-[calc(80svh+var(--header-h))] flex-col justify-center overflow-hidden border-b-3 border-ink"
+    >
       <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-28 max-sm:py-10 max-sm:pb-28">
         <Reveal>
           <div className="mb-4 inline-flex items-center gap-3 border-3 border-ink bg-surface px-3 py-1.5 shadow-nb">
@@ -28,7 +31,7 @@ export default function Skills() {
               <div className="group flex h-full flex-col border-3 border-ink bg-surface p-5 shadow-nb transition-transform duration-150 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-nb-lg">
                 <div className="flex items-start justify-between">
                   <div
-                    className={`grid h-14 w-14 place-items-center border-3 border-ink ${skill.chip} shadow-[3px_3px_0_0_#0a0a0a]`}
+                    className={`grid h-14 w-14 place-items-center border-3 border-ink ${skill.chip ?? "bg-transparent"} shadow-[3px_3px_0_0_#0a0a0a]`}
                   >
                     <skill.icon />
                   </div>

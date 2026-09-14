@@ -1,24 +1,20 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
 import { headerLinks, sectionIds } from "../lib/data";
 
 function Logo() {
   return (
-    <svg
-      viewBox="15 16 34 34"
-      className="h-6 w-6 max-sm:h-7 max-sm:w-7"
+    <Image
+      src="/icon.png"
+      alt=""
       aria-hidden="true"
-    >
-      <path
-        d="M18 44 V20 h9 c7 0 11 3 11 10 c0 7 -4 10 -11 10 Z"
-        fill="#131313"
-        stroke="#0a0a0a"
-        strokeWidth="3"
-      />
-      <circle cx="43" cy="42" r="3" fill="#131313" />
-    </svg>
+      width={256}
+      height={256}
+      className="h-6 w-6 max-sm:h-7 max-sm:w-7"
+    />
   );
 }
 
