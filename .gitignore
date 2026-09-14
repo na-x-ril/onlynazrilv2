@@ -43,3 +43,7 @@ next-env.d.ts
 PRD.md
 AGENTS.md
 CLAUDE.md
+graphify-out/
+/dist/
+.vinext/
+.wrangler/
